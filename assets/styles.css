@@ -1,0 +1,156 @@
+:root {
+    --bg: #07111f;
+    --bg-strong: #020b16;
+    --panel: rgba(14, 24, 38, 0.8);
+    --panel-alt: rgba(18, 31, 48, 0.9);
+    --line: rgba(121, 214, 255, 0.18);
+    --text: #eaf3ff;
+    --muted: #9db7d0;
+    --blue: #6ea8fe;
+    --cyan: #72e7ff;
+    --purple: #8d7dff;
+    --green: #7ef0bf;
+    --shadow: rgba(110, 168, 254, 0.38);
+}
+
+html, body, [data-testid="stAppViewContainer"] {
+    background: linear-gradient(135deg, var(--bg-strong), var(--bg));
+    color: var(--text);
+    font-family: "Segoe UI", sans-serif;
+}
+
+[data-testid="stSidebar"] {
+    background: rgba(9, 18, 30, 0.9);
+    border-right: 1px solid var(--line);
+}
+
+.stApp {
+    background: radial-gradient(circle at top left, rgba(109, 108, 255, 0.14), transparent 28%),
+                radial-gradient(circle at bottom right, rgba(30, 162, 255, 0.12), transparent 30%);
+}
+
+.brand-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 14px;
+    background: rgba(17, 27, 42, 0.8);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    box-shadow: 0 0 30px rgba(110, 168, 254, 0.15);
+}
+
+.brand-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cyan), var(--purple));
+    box-shadow: 0 0 18px rgba(114, 231, 255, 0.8);
+}
+
+.brand-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.brand-subtitle {
+    font-size: 0.72rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+}
+
+section[data-testid="stSidebar"] .stRadio {
+    margin-top: 10px;
+}
+
+.stTabs [role="tablist"] {
+    gap: 12px;
+}
+
+.kpi-card {
+    background: linear-gradient(180deg, rgba(19, 30, 45, 0.95), rgba(10, 17, 26, 0.95));
+    border: 1px solid rgba(114, 231, 255, 0.18);
+    border-radius: 18px;
+    padding: 1.1rem 1.2rem;
+    box-shadow: 0 12px 28px rgba(14, 29, 39, 0.42), 0 0 0 1px rgba(255,255,255,0.04);
+    min-height: 130px;
+}
+
+.kpi-label {
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 10px;
+}
+
+.kpi-value {
+    font-size: clamp(1.6rem, 2vw, 2.2rem);
+    font-weight: 700;
+    color: var(--text);
+}
+
+.kpi-delta {
+    margin-top: 8px;
+    font-size: 0.8rem;
+    color: var(--muted);
+}
+
+.metric-card {
+    background: rgba(17, 26, 38, 0.9);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 1rem 1.1rem;
+}
+
+.hero-box {
+    background: linear-gradient(135deg, rgba(17, 27, 42, 0.96), rgba(12, 25, 38, 0.8));
+    border: 1px solid var(--line);
+    border-radius: 22px;
+    padding: 1.5rem;
+    box-shadow: 0 16px 35px rgba(96, 143, 255, 0.12);
+}
+
+.main-title {
+    font-size: clamp(2rem, 3vw, 3rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin-bottom: 0.6rem;
+}
+
+.subtle-text {
+    color: var(--muted);
+    font-size: 1rem;
+}
+
+.glass-panel {
+    background: rgba(16, 24, 34, 0.8);
+    border: 1px solid rgba(114, 231, 255, 0.18);
+    border-radius: 16px;
+    padding: 1rem;
+}
+
+.feature-pill {
+    display: inline-block;
+    padding: 0.5rem 0.8rem;
+    border-radius: 999px;
+    margin: 0.2rem 0.4rem 0.2rem 0;
+    border: 1px solid rgba(114, 231, 255, 0.2);
+    background: rgba(108, 164, 255, 0.09);
+    color: var(--text);
+    font-size: 0.8rem;
+}
+
+.table-wrap {
+    background: rgba(10, 16, 24, 0.7);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 18px;
+    padding: 0.8rem;
+}
+
+[data-testid="stMetricValue"] {
+    color: var(--text);
+    font-size: 1.8rem;
+}
